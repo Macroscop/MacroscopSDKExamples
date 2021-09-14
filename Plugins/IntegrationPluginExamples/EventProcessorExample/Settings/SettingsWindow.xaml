@@ -1,0 +1,23 @@
+﻿<Window x:Class="EventProcessorExample.Settings.SettingsWindow"
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		Width="200"
+		Height="200"
+		Title="Settings" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Topmost="True" FontFamily="Calibri" FontSize="12" SizeToContent="WidthAndHeight">
+	<StackPanel>
+		<StackPanel Orientation="Horizontal">
+			<TextBlock Text="Delay, ms"
+					   Margin="10" />
+			<TextBox Width="100"
+					 Margin="10"
+					 Name="Delay"
+					 HorizontalAlignment="Left"
+					 VerticalAlignment="Center" />
+		</StackPanel>
+		<Button HorizontalAlignment="Left"
+				Width="100"
+				Margin="8,4"
+				Content="OK"
+				Click="OKButton_Click" />
+	</StackPanel>
+</Window>
