@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31313.79
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventProcessorExample", "EventProcessorExample\EventProcessorExample.csproj", "{48B6A0DA-3CF3-4E6E-B589-589C9027D6A2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExternalActionExample", "ExternalActionExample\ExternalActionExample.csproj", "{286F670F-5F3B-4A4C-BA6E-19B22F672D89}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{48B6A0DA-3CF3-4E6E-B589-589C9027D6A2}.Release|x64.Build.0 = Release|x64
 		{48B6A0DA-3CF3-4E6E-B589-589C9027D6A2}.Release|x86.ActiveCfg = Release|x86
 		{48B6A0DA-3CF3-4E6E-B589-589C9027D6A2}.Release|x86.Build.0 = Release|x86
+		{286F670F-5F3B-4A4C-BA6E-19B22F672D89}.Debug|x64.ActiveCfg = Debug|x64
+		{286F670F-5F3B-4A4C-BA6E-19B22F672D89}.Debug|x64.Build.0 = Debug|x64
+		{286F670F-5F3B-4A4C-BA6E-19B22F672D89}.Debug|x86.ActiveCfg = Debug|x86
+		{286F670F-5F3B-4A4C-BA6E-19B22F672D89}.Debug|x86.Build.0 = Debug|x86
+		{286F670F-5F3B-4A4C-BA6E-19B22F672D89}.Release|x64.ActiveCfg = Release|x64
+		{286F670F-5F3B-4A4C-BA6E-19B22F672D89}.Release|x64.Build.0 = Release|x64
+		{286F670F-5F3B-4A4C-BA6E-19B22F672D89}.Release|x86.ActiveCfg = Release|x86
+		{286F670F-5F3B-4A4C-BA6E-19B22F672D89}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
