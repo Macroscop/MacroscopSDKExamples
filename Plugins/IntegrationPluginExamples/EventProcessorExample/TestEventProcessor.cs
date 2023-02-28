@@ -3,6 +3,7 @@ using Alarus;
 using Alarus.RealTimeFrameProviding;
 using EventProcessorExample.Events;
 using EventProcessorExample.Settings;
+using Timer = System.Timers.Timer;
 
 namespace EventProcessorExample
 {
