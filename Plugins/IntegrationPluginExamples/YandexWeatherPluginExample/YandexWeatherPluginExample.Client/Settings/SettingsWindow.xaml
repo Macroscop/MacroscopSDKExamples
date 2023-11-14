@@ -1,0 +1,80 @@
+<Window x:Class="YandexWeatherPluginExample.Settings.SettingsWindow"
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		Width="500"
+		Height="450"
+		Title="Настройки"
+		WindowStartupLocation="CenterScreen"
+		ResizeMode="NoResize"
+		Topmost="True"
+		FontFamily="Calibri"
+		FontSize="12"
+		SizeToContent="WidthAndHeight"
+		x:ClassModifier="internal">
+	<Grid>
+		<TabControl Margin="5"
+					Height="200">
+			<TabItem Header="Общие настройки">
+				<StackPanel>
+					<StackPanel Orientation=" Horizontal">
+						<TextBlock Text="API Key"
+								   Margin="10" />
+						<TextBox Width="100"
+								 Margin="10"
+								 Name="ApiKey"
+								 HorizontalAlignment="Left"
+								 VerticalAlignment="Center" />
+					</StackPanel>
+					<StackPanel Orientation="Horizontal">
+						<TextBlock Text="Delay, ms"
+								   Margin="5, 10" />
+						<TextBox Width="100"
+								 Margin="10"
+								 Name="Delay"
+								 HorizontalAlignment="Left"
+								 VerticalAlignment="Center" />
+					</StackPanel>
+				</StackPanel>
+			</TabItem>
+			<TabItem Header="Настройки камеры">
+				<StackPanel>
+					<StackPanel Orientation="Horizontal">
+						<TextBlock Text="lat"
+								   Margin="10" />
+						<TextBox Width="100"
+								 Margin="10"
+								 Name="Lat"
+								 HorizontalAlignment="Left"
+								 VerticalAlignment="Center" />
+					</StackPanel>
+					<StackPanel Orientation="Horizontal">
+						<TextBlock Text="lon"
+								   Margin="10" />
+						<TextBox Width="100"
+								 Margin="7"
+								 Name="Lon"
+								 HorizontalAlignment="Left"
+								 VerticalAlignment="Center" />
+					</StackPanel>
+				</StackPanel>
+			</TabItem>
+		</TabControl>
+		<StackPanel Orientation="Horizontal"
+					HorizontalAlignment="Center"
+					VerticalAlignment="Bottom"
+					Margin="0,20,0,0">
+			<Button Height="20"
+					Width="60"
+					Margin="0, 10"
+					Content="OK"
+					Click="OKButton_Click">
+			</Button>
+			<Button Height="20"
+					Width="60"
+					Margin="10, 40"
+					Content="Cancel"
+					Click="CancelButton_Click">
+			</Button>
+		</StackPanel>
+	</Grid>
+</Window>

@@ -7,6 +7,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventProcessorExample", "Ev
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExternalActionExample", "ExternalActionExample\ExternalActionExample.csproj", "{286F670F-5F3B-4A4C-BA6E-19B22F672D89}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "YandexWeatherPluginExample", "YandexWeatherPluginExample", "{8AD2E5FF-9071-4EF3-B271-1CA1A52651B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YandexWeatherPluginExample.Server", "YandexWeatherPluginExample\YandexWeatherPluginExample.Server\YandexWeatherPluginExample.Server.csproj", "{ED93982C-82BE-4502-9087-F06C55185D8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YandexWeatherPluginExample.Common", "YandexWeatherPluginExample\YandexWeatherPluginExample.Common\YandexWeatherPluginExample.Common.csproj", "{6B4915D7-0D05-4223-8850-2A98B687D02E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YandexWeatherPluginExample.Client", "YandexWeatherPluginExample\YandexWeatherPluginExample.Client\YandexWeatherPluginExample.Client.csproj", "{C5F55ACF-995A-48F1-AF22-6D9006ED3989}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,12 +27,28 @@ Global
 		{48B6A0DA-3CF3-4E6E-B589-589C9027D6A2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{286F670F-5F3B-4A4C-BA6E-19B22F672D89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{286F670F-5F3B-4A4C-BA6E-19B22F672D89}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{286F670F-5F3B-4A4C-BA6E-19B22F672D89}.Release|Any CPU.ActiveCfg = Release|x64
+		{ED93982C-82BE-4502-9087-F06C55185D8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED93982C-82BE-4502-9087-F06C55185D8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED93982C-82BE-4502-9087-F06C55185D8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED93982C-82BE-4502-9087-F06C55185D8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B4915D7-0D05-4223-8850-2A98B687D02E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B4915D7-0D05-4223-8850-2A98B687D02E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B4915D7-0D05-4223-8850-2A98B687D02E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B4915D7-0D05-4223-8850-2A98B687D02E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5F55ACF-995A-48F1-AF22-6D9006ED3989}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5F55ACF-995A-48F1-AF22-6D9006ED3989}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5F55ACF-995A-48F1-AF22-6D9006ED3989}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5F55ACF-995A-48F1-AF22-6D9006ED3989}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AC631CCE-1484-4F0C-BA51-DB95A8E55515}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{ED93982C-82BE-4502-9087-F06C55185D8F} = {8AD2E5FF-9071-4EF3-B271-1CA1A52651B4}
+		{6B4915D7-0D05-4223-8850-2A98B687D02E} = {8AD2E5FF-9071-4EF3-B271-1CA1A52651B4}
+		{C5F55ACF-995A-48F1-AF22-6D9006ED3989} = {8AD2E5FF-9071-4EF3-B271-1CA1A52651B4}
 	EndGlobalSection
 EndGlobal

@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>disable</Nullable>
+        <RootNamespace>YandexWeatherPluginExample</RootNamespace>
+        <TargetFrameworks>net6.0;net6.0-windows</TargetFrameworks>
+        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+        <AppendTargetFrameworkToOutputPath>true</AppendTargetFrameworkToOutputPath>
+        <PluginDestinationFolder>$(MacroscopFolder)\Plugins\Integration\YandexWeatherExample\</PluginDestinationFolder>
+    </PropertyGroup>
+
+    <Target Name="CopyDLLs" AfterTargets="PostBuildEvent">
+        <Message Text="Executing CopyDLLs task for $(ProjectName)" Importance="High"/>
+        <Copy SourceFiles="$(TargetDir)$(ProjectName).dll"
+              DestinationFolder="$(PluginDestinationFolder)"/>
+        <Message Text="Copied $(ProjectName).dll file in folder $(PluginDestinationFolder)" Importance="High"/>
+    </Target>
+
+    <ItemGroup>
+        <PackageReference Include="Macroscop.MacroscopSDK" Version="4.0.1"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\YandexWeatherPluginExample.Common\YandexWeatherPluginExample.Common.csproj"/>
+    </ItemGroup>
+</Project>

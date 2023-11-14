@@ -11,8 +11,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Macroscop.MacroscopSDK" Version="4.0.1" />
     <PackageReference Include="Macroscop.GUISDK" Version="4.0.1" />
+    <PackageReference Include="Macroscop.MacroscopSDK" Version="4.0.1" />
   </ItemGroup>
 
 </Project>

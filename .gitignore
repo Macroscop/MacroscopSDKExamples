@@ -1,7 +1,8 @@
-
+#Ignore merge files
+*.orig
 #Ignore thumbnails created by Windows
 Thumbs.db
-#Ignore files built by Visual Studio
+#Ignore files built by Visual Studio/Rider
 *.obj
 *.exe
 *.pdb
@@ -28,5 +29,6 @@ obj/
 _ReSharper*/
 [Tt]est[Rr]esult*
 .vs/
+.idea
 #Nuget packages folder
 packages/

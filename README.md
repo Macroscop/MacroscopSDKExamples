@@ -8,5 +8,6 @@ Repo structure:
     - [IntegrationPluginExamples](/Plugins/IntegrationPluginExamples)
         - [EventProcessorExample](/Plugins/IntegrationPluginExamples/EventProcessorExample)
         - [ExternalActionExample](/Plugins/IntegrationPluginExamples/ExternalActionExample)
+        - [YandexWeatherPluginExample](/Plugins/IntegrationPluginExamples/YandexWeatherPluginExample)
     - Analytics - TODO
 - HTTP API Examples - TODO
